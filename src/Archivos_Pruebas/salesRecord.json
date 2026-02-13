@@ -1,5 +1,5 @@
 [
-    { "Sale": "Venta-1001", "items": [{ "Product": "Laptop Pro 15", "Quantity": 1 }, { "Product": "Mouse Wireless", "Quantity": 1 }] },
+    { "Sale": "Venta-1001", "items": [{ "Product": "Laptop Msi 15", "Quantity": 1 }, { "Product": "Mouse Wireless", "Quantity": 1 }] },
     { "Sale": "Venta-1002", "items": [{ "Product": "Monitor 27in 4K", "Quantity": 2 }] },
     { "Sale": "Venta-1003", "items": [{ "Product": "Teclado Mecánico", "Quantity": 1 }, { "Product": "Reposamuñecas", "Quantity": 1 }] },
     { "Sale": "Venta-1004", "items": [{ "Product": "Cable USB-C", "Quantity": 5 }, { "Product": "Cargador 65W", "Quantity": 2 }] },
