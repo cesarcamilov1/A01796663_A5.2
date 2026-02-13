@@ -1,0 +1,281 @@
+======================================================================
+REPORTE DE VENTAS
+======================================================================
+
+Venta: Venta-1001
+----------------------------------------------------------------------
+  Laptop Msi 15                  | Cant:    1 | Precio: $25000.00 | Subtotal: $  25000.00
+  Mouse Wireless                 | Cant:    1 | Precio: $  350.00 | Subtotal: $    350.00
+  TOTAL VENTA                                     $  25350.00
+
+Venta: Venta-1002
+----------------------------------------------------------------------
+  Monitor 27in 4K                | Cant:    2 | Precio: $ 8500.00 | Subtotal: $  17000.00
+  TOTAL VENTA                                     $  17000.00
+
+Venta: Venta-1003
+----------------------------------------------------------------------
+  Teclado Mecánico               | Cant:    1 | Precio: $ 1200.00 | Subtotal: $   1200.00
+  Reposamuñecas                  | Cant:    1 | Precio: $  150.00 | Subtotal: $    150.00
+  TOTAL VENTA                                     $   1350.00
+
+Venta: Venta-1004
+----------------------------------------------------------------------
+  Cable USB-C                    | Cant:    5 | Precio: $  120.00 | Subtotal: $    600.00
+  Cargador 65W                   | Cant:    2 | Precio: $  800.00 | Subtotal: $   1600.00
+  TOTAL VENTA                                     $   2200.00
+
+Venta: Venta-1005
+----------------------------------------------------------------------
+  SSD 1TB NVMe                   | Cant:   10 | Precio: $ 2200.00 | Subtotal: $  22000.00
+  TOTAL VENTA                                     $  22000.00
+
+Venta: Venta-1006
+----------------------------------------------------------------------
+  Webcam HD                      | Cant:    1 | Precio: $  600.00 | Subtotal: $    600.00
+  TOTAL VENTA                                     $    600.00
+
+Venta: Venta-1007
+----------------------------------------------------------------------
+  Silla Ergonómica               | Cant:    1 | Precio: $ 4500.00 | Subtotal: $   4500.00
+  Alfombra Protectora            | Cant:    1 | Precio: $  300.00 | Subtotal: $    300.00
+  TOTAL VENTA                                     $   4800.00
+
+Venta: Venta-1008
+----------------------------------------------------------------------
+  Auriculares Bluetooth          | Cant:    3 | Precio: $ 1500.00 | Subtotal: $   4500.00
+  TOTAL VENTA                                     $   4500.00
+
+Venta: Venta-1009
+----------------------------------------------------------------------
+  RAM 16GB DDR4                  | Cant:    2 | Precio: $ 1800.00 | Subtotal: $   3600.00
+  Pasta Térmica                  | Cant:    1 | Precio: $  250.00 | Subtotal: $    250.00
+  TOTAL VENTA                                     $   3850.00
+
+Venta: Venta-1010
+----------------------------------------------------------------------
+  Tablet 10in                    | Cant:    1 | Precio: $ 3500.00 | Subtotal: $   3500.00
+  Funda Tablet                   | Cant:    1 | Precio: $  200.00 | Subtotal: $    200.00
+  Stylus Pen                     | Cant:    1 | Precio: $  500.00 | Subtotal: $    500.00
+  TOTAL VENTA                                     $   4200.00
+
+Venta: Venta-1011
+----------------------------------------------------------------------
+  Router WiFi 6                  | Cant:    1 | Precio: $ 2800.00 | Subtotal: $   2800.00
+  TOTAL VENTA                                     $   2800.00
+
+Venta: Venta-1012
+----------------------------------------------------------------------
+  Cable Ethernet 5m              | Cant:   20 | Precio: $   80.00 | Subtotal: $   1600.00
+  TOTAL VENTA                                     $   1600.00
+
+Venta: Venta-1013
+----------------------------------------------------------------------
+  Monitor 24in                   | Cant:    4 | Precio: $ 3200.00 | Subtotal: $  12800.00
+  Soporte VESA                   | Cant:    4 | Precio: $  400.00 | Subtotal: $   1600.00
+  TOTAL VENTA                                     $  14400.00
+
+Venta: Venta-1014
+----------------------------------------------------------------------
+  Disco Duro Externo 2TB         | Cant:    2 | Precio: $ 1600.00 | Subtotal: $   3200.00
+  TOTAL VENTA                                     $   3200.00
+
+Venta: Venta-1015
+----------------------------------------------------------------------
+  Laptop Gamer                   | Cant:    1 | Precio: $32000.00 | Subtotal: $  32000.00
+  Base Refrigerante              | Cant:    1 | Precio: $  450.00 | Subtotal: $    450.00
+  TOTAL VENTA                                     $  32450.00
+
+Venta: Venta-1016
+----------------------------------------------------------------------
+  Impresora Láser                | Cant:    1 | Precio: $ 4000.00 | Subtotal: $   4000.00
+  Tóner Negro                    | Cant:    2 | Precio: $  900.00 | Subtotal: $   1800.00
+  TOTAL VENTA                                     $   5800.00
+
+Venta: Venta-1017
+----------------------------------------------------------------------
+  Smartphone                     | Cant:    1 | Precio: $ 8000.00 | Subtotal: $   8000.00
+  TOTAL VENTA                                     $   8000.00
+
+Venta: Venta-1018
+----------------------------------------------------------------------
+  Micro SD 128GB                 | Cant:    5 | Precio: $  350.00 | Subtotal: $   1750.00
+  Adaptador SD                   | Cant:    5 | Precio: $   50.00 | Subtotal: $    250.00
+  TOTAL VENTA                                     $   2000.00
+
+Venta: Venta-1019
+----------------------------------------------------------------------
+  Tarjeta Gráfica RTX            | Cant:    1 | Precio: $15000.00 | Subtotal: $  15000.00
+  TOTAL VENTA                                     $  15000.00
+
+Venta: Venta-1020
+----------------------------------------------------------------------
+  Fuente de Poder 750W           | Cant:    1 | Precio: $ 2100.00 | Subtotal: $   2100.00
+  TOTAL VENTA                                     $   2100.00
+
+Venta: Venta-1021
+----------------------------------------------------------------------
+  Gabinete PC                    | Cant:    1 | Precio: $ 1800.00 | Subtotal: $   1800.00
+  Ventilador 120mm               | Cant:    3 | Precio: $  200.00 | Subtotal: $    600.00
+  TOTAL VENTA                                     $   2400.00
+
+Venta: Venta-1022
+----------------------------------------------------------------------
+  Mouse Pad XL                   | Cant:   10 | Precio: $  300.00 | Subtotal: $   3000.00
+  TOTAL VENTA                                     $   3000.00
+
+Venta: Venta-1023
+----------------------------------------------------------------------
+  Proyector                      | Cant:    1 | Precio: $ 9000.00 | Subtotal: $   9000.00
+  Telón Proyector                | Cant:    1 | Precio: $ 1200.00 | Subtotal: $   1200.00
+  TOTAL VENTA                                     $  10200.00
+
+Venta: Venta-1024
+----------------------------------------------------------------------
+  Switch de Red 8 Puertos        | Cant:    2 | Precio: $  600.00 | Subtotal: $   1200.00
+  TOTAL VENTA                                     $   1200.00
+
+Venta: Venta-1025
+----------------------------------------------------------------------
+  Hub USB                        | Cant:    4 | Precio: $  350.00 | Subtotal: $   1400.00
+  TOTAL VENTA                                     $   1400.00
+
+Venta: Venta-1026
+----------------------------------------------------------------------
+  Micrófono USB                  | Cant:    1 | Precio: $ 1900.00 | Subtotal: $   1900.00
+  Brazo Micrófono                | Cant:    1 | Precio: $  500.00 | Subtotal: $    500.00
+  TOTAL VENTA                                     $   2400.00
+
+Venta: Venta-1027
+----------------------------------------------------------------------
+  Laptop Ultrabook               | Cant:    5 | Precio: $21000.00 | Subtotal: $ 105000.00
+  TOTAL VENTA                                     $ 105000.00
+
+Venta: Venta-1028
+----------------------------------------------------------------------
+  Docking Station                | Cant:    5 | Precio: $ 3500.00 | Subtotal: $  17500.00
+  TOTAL VENTA                                     $  17500.00
+
+Venta: Venta-1029
+----------------------------------------------------------------------
+  Cámara de Seguridad            | Cant:    4 | Precio: $ 1200.00 | Subtotal: $   4800.00
+  TOTAL VENTA                                     $   4800.00
+
+Venta: Venta-1030
+----------------------------------------------------------------------
+  Smart Watch                    | Cant:    2 | Precio: $ 4500.00 | Subtotal: $   9000.00
+  TOTAL VENTA                                     $   9000.00
+
+Venta: Venta-1031
+----------------------------------------------------------------------
+  Teclado Numérico               | Cant:    1 | Precio: $  250.00 | Subtotal: $    250.00
+  TOTAL VENTA                                     $    250.00
+
+Venta: Venta-1032
+----------------------------------------------------------------------
+  Limpiador de Pantallas         | Cant:   12 | Precio: $  100.00 | Subtotal: $   1200.00
+  TOTAL VENTA                                     $   1200.00
+
+Venta: Venta-1033
+----------------------------------------------------------------------
+  Batería Portátil 20000mAh      | Cant:    3 | Precio: $  900.00 | Subtotal: $   2700.00
+  TOTAL VENTA                                     $   2700.00
+
+Venta: Venta-1034
+----------------------------------------------------------------------
+  Lector de Código de Barras     | Cant:    1 | Precio: $  850.00 | Subtotal: $    850.00
+  TOTAL VENTA                                     $    850.00
+
+Venta: Venta-1035
+----------------------------------------------------------------------
+  Impresora de Tickets           | Cant:    1 | Precio: $ 2500.00 | Subtotal: $   2500.00
+  Rollos Papel Térmico           | Cant:   10 | Precio: $   20.00 | Subtotal: $    200.00
+  TOTAL VENTA                                     $   2700.00
+
+Venta: Venta-1036
+----------------------------------------------------------------------
+  Parlantes 2.1                  | Cant:    1 | Precio: $ 1100.00 | Subtotal: $   1100.00
+  TOTAL VENTA                                     $   1100.00
+
+Venta: Venta-1037
+----------------------------------------------------------------------
+  Cable HDMI 2m                  | Cant:   50 | Precio: $  150.00 | Subtotal: $   7500.00
+  TOTAL VENTA                                     $   7500.00
+
+Venta: Venta-1038
+----------------------------------------------------------------------
+  Adaptador HDMI a VGA           | Cant:    2 | Precio: $  200.00 | Subtotal: $    400.00
+  TOTAL VENTA                                     $    400.00
+
+Venta: Venta-1039
+----------------------------------------------------------------------
+  Placa Madre ATX                | Cant:    1 | Precio: $ 3500.00 | Subtotal: $   3500.00
+  Procesador Ryzen 7             | Cant:    1 | Precio: $ 7500.00 | Subtotal: $   7500.00
+  TOTAL VENTA                                     $  11000.00
+
+Venta: Venta-1040
+----------------------------------------------------------------------
+  Memoria USB 64GB               | Cant:   25 | Precio: $  180.00 | Subtotal: $   4500.00
+  TOTAL VENTA                                     $   4500.00
+
+Venta: Venta-1041
+----------------------------------------------------------------------
+  Ups 1000VA                     | Cant:    1 | Precio: $ 2800.00 | Subtotal: $   2800.00
+  TOTAL VENTA                                     $   2800.00
+
+Venta: Venta-1042
+----------------------------------------------------------------------
+  Software Antivirus             | Cant:   10 | Precio: $  600.00 | Subtotal: $   6000.00
+  TOTAL VENTA                                     $   6000.00
+
+Venta: Venta-1043
+----------------------------------------------------------------------
+  Licencia Office                | Cant:    5 | Precio: $ 3500.00 | Subtotal: $  17500.00
+  TOTAL VENTA                                     $  17500.00
+
+Venta: Venta-1044
+----------------------------------------------------------------------
+  Laptop Basic                   | Cant:    2 | Precio: $ 9000.00 | Subtotal: $  18000.00
+  Mouse Básico                   | Cant:    2 | Precio: $  150.00 | Subtotal: $    300.00
+  TOTAL VENTA                                     $  18300.00
+
+Venta: Venta-1045
+----------------------------------------------------------------------
+  Kit Herramientas PC            | Cant:    1 | Precio: $  550.00 | Subtotal: $    550.00
+  TOTAL VENTA                                     $    550.00
+
+Venta: Venta-1046
+----------------------------------------------------------------------
+  Cinta Velcro                   | Cant:   10 | Precio: $   30.00 | Subtotal: $    300.00
+  TOTAL VENTA                                     $    300.00
+
+Venta: Venta-1047
+----------------------------------------------------------------------
+  Organizador Cables             | Cant:    4 | Precio: $  120.00 | Subtotal: $    480.00
+  TOTAL VENTA                                     $    480.00
+
+Venta: Venta-1048
+----------------------------------------------------------------------
+  Filtro Privacidad Monitor      | Cant:    2 | Precio: $  700.00 | Subtotal: $   1400.00
+  TOTAL VENTA                                     $   1400.00
+
+Venta: Venta-1049
+----------------------------------------------------------------------
+  Soporte Laptop                 | Cant:    3 | Precio: $  600.00 | Subtotal: $   1800.00
+  TOTAL VENTA                                     $   1800.00
+
+Venta: Venta-1050
+----------------------------------------------------------------------
+  Servidor Rack                  | Cant:    1 | Precio: $45000.00 | Subtotal: $  45000.00
+  Disco SAS 4TB                  | Cant:    4 | Precio: $ 3800.00 | Subtotal: $  15200.00
+  TOTAL VENTA                                     $  60200.00
+
+======================================================================
+RESUMEN
+======================================================================
+Total de ventas: 50
+TOTAL GENERAL: $471,630.00
+
+======================================================================
+Tiempo de ejecución: 0.0005 segundos
+======================================================================
