@@ -1,3 +1,5 @@
+# pylint: disable=invalid-name
+"""Módulo para calcular costos totales de ventas de computadoras."""
 import json
 import sys
 import time
@@ -9,8 +11,10 @@ def load_json_file(filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
         return data
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Error: No se encontró '{filepath}'.")
+    except FileNotFoundError as exc:
+        raise FileNotFoundError(
+            f"Error: No se encontró '{filepath}'."
+        ) from exc
     except json.JSONDecodeError as e:
         raise json.JSONDecodeError(
             f"Error: '{filepath}' no es JSON válido.", e.doc, e.pos
@@ -21,7 +25,8 @@ def validate_price_catalogue(catalogue):
     """Recorre el catálogo y armamos un diccionario {producto: precio}."""
     prices = {}
     if not isinstance(catalogue, list):
-        print("Error: El catálogo no tiene el formato esperado, debe ser una lista.")
+        print("Error: El catálogo no tiene el formato "
+              "esperado, debe ser una lista.")
         return prices
 
     for i, item in enumerate(catalogue):
@@ -48,6 +53,53 @@ def validate_price_catalogue(catalogue):
     return prices
 
 
+def _process_item(item, j, sale_id, price_catalogue, errors):
+    """Procesa un item individual de una venta."""
+    if not isinstance(item, dict):
+        errors.append(
+            f"{sale_id}, item {j}: formato inválido."
+        )
+        return None
+
+    product = item.get('Product')
+    qty = item.get('Quantity', 0)
+
+    if not product:
+        errors.append(
+            f"{sale_id}, item {j}: falta 'Product'."
+        )
+        return None
+
+    if product not in price_catalogue:
+        errors.append(
+            f"{sale_id}: '{product}' no en catálogo."
+        )
+        return None
+
+    try:
+        qty = int(qty)
+    except (ValueError, TypeError):
+        errors.append(
+            f"{sale_id}: cant. inválida '{product}'."
+        )
+        return None
+
+    if qty < 0:
+        errors.append(
+            f"{sale_id}: cant. negativa '{product}'."
+        )
+        return None
+
+    precio = price_catalogue[product]
+    subtotal = qty * precio
+    return {
+        'product': product,
+        'quantity': qty,
+        'price': precio,
+        'subtotal': subtotal
+    }
+
+
 def process_sales(sales_data, price_catalogue):
     """
     Recorremos las ventas, buscando cada producto en el catálogo
@@ -63,63 +115,32 @@ def process_sales(sales_data, price_catalogue):
 
     for idx, sale in enumerate(sales_data):
         if not isinstance(sale, dict):
-            errors.append(f"Venta {idx}: no es un diccionario válido.")
+            errors.append(f"Venta {idx}: no es un dict.")
             continue
 
         if 'Sale' not in sale:
-            errors.append(f"Venta {idx}: falta el campo 'Sale'.")
+            errors.append(f"Venta {idx}: falta 'Sale'.")
             continue
 
         sale_id = sale['Sale']
         items = sale.get('items', [])
         if not isinstance(items, list):
-            errors.append(f"{sale_id}: 'items' no es una lista.")
+            errors.append(f"{sale_id}: 'items' no es lista.")
             continue
 
         sale_total = 0.0
-        sale_det = {'sale_id': sale_id, 'items': [], 'total': 0.0}
+        sale_det = {
+            'sale_id': sale_id, 'items': [], 'total': 0.0
+        }
 
         for j, item in enumerate(items):
-            if not isinstance(item, dict):
-                errors.append(f"{sale_id}, item {j}: formato inválido.")
+            result = _process_item(
+                item, j, sale_id, price_catalogue, errors
+            )
+            if result is None:
                 continue
-
-            product = item.get('Product')
-            qty = item.get('Quantity', 0)
-
-            if not product:
-                errors.append(f"{sale_id}, item {j}: falta 'Product'.")
-                continue
-
-            if product not in price_catalogue:
-                errors.append(
-                    f"{sale_id}: '{product}' no está en el catálogo."
-                )
-                continue
-
-            # Validamos la cantidad
-            try:
-                qty = int(qty)
-            except (ValueError, TypeError):
-                errors.append(f"{sale_id}: cantidad inválida para '{product}'.")
-                continue
-
-            if qty < 0:
-                errors.append(
-                    f"{sale_id}: cantidad negativa para '{product}'."
-                )
-                continue
-
-            precio = price_catalogue[product]
-            subtotal = qty * precio
-            sale_total += subtotal
-
-            sale_det['items'].append({
-                'product': product,
-                'quantity': qty,
-                'price': precio,
-                'subtotal': subtotal
-            })
+            sale_total += result['subtotal']
+            sale_det['items'].append(result)
 
         sale_det['total'] = sale_total
         total += sale_total
@@ -185,9 +206,12 @@ def save_results(text, filename="SalesResults.txt"):
 
 
 def main():
-    # revisamos argumentos para asegurarnos que se haga correctamente
+    """Punto de entrada principal del programa."""
     if len(sys.argv) != 3:
-        print("Uso: python computerSales.py priceCatalogue.json salesRecord.json")
+        print(
+            "Uso: python computerSales.py "
+            "priceCatalogue.json salesRecord.json"
+        )
         sys.exit(1)
 
     catalogo_path = sys.argv[1]
@@ -201,7 +225,7 @@ def main():
         catalogo_raw = load_json_file(catalogo_path)
         # cargamos las ventas
         ventas_raw = load_json_file(ventas_path)
-        # se arma el cataglogo de precios, validando que tenga el formato correcto
+        # se arma el catálogo de precios validado
         precios = validate_price_catalogue(catalogo_raw)
         if not precios:
             print("Error: No se encontraron productos válidos en el catálogo.")
@@ -227,7 +251,7 @@ def main():
     except json.JSONDecodeError as e:
         print(f"\nError leyendo JSON: {e}")
         sys.exit(1)
-    except Exception as e:
+    except (TypeError, KeyError, ValueError) as e:
         print(f"\nError inesperado: {e}")
         sys.exit(1)
 

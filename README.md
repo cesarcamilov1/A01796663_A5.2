@@ -35,3 +35,65 @@
 |  | Req 8. Be compliant with PEP8. |  |  |
 
 ---
+
+
+## Estructura del proyecto
+
+```
+A01796663_A5.2/
+│
+├── README.md                          # documentación
+│
+└── src/
+    ├── computerSales.py               # Programa principal en python
+    │
+    ├── Archivos_Pruebas/              # Archivos JSON
+    │   ├── priceCatalogue.json        
+    │   ├── salesRecord.json          
+    │   └── salesRecordWErrors.json  
+    │
+    ├── imagenes_pruebas/              # SS de las ejecuciones
+    │   ├── image.png                  
+    │   └── prueba_plint.png           
+    │
+    └── Resultados/
+        └── SalesResults.txt           # Archivo de resultados en .txt
+```
+
+---
+
+## Cómo ejecutar el programa
+
+Ejecutar el programa
+
+El programa necesita **dos archivos JSON** como parámetros: el catálogo de precios y el registro de ventas. Así se ejecuta:
+
+```bash
+python computerSales.py Archivos_Pruebas/priceCatalogue.json Archivos_Pruebas/salesRecord.json 
+```
+
+Cada ejecución va a mostrarte en pantalla el costo total de las ventas y el tiempo que tardó en calcularlo. Además, genera automáticamente un archivo llamado `SalesResults.txt`.
+
+### Análisis estático con pylint y flake8
+
+Para verificar que el código cumple con PEP8 y no tie problemas ejecutamos el siguiente comando: 
+```bash
+python -m pylint computerSales.py
+flake8 computeSales.py
+```
+
+---
+
+## Resultados
+
+### Ejecución del programa
+![Resultado de la ejecución](src/imagenes_pruebas/exe.png)
+
+### Ejecución de Pylint
+![Resultado de pylint](src/imagenes_pruebas/prueba_plint.png)
+
+### Ejecución de Flake8
+![Resultado de pylint](src/imagenes_pruebas/flake8.png)
+
+
+### Gracias
